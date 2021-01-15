@@ -1,0 +1,27 @@
+{
+  "development": {
+    "username": "root",
+    "password": "semere62716",
+    "database": "eshi_digital",
+    "host": "127.0.0.1",
+    "dialect": "mysql",
+    "operatorsAliases": false
+  },
+  "test": {
+    "username": "root",
+    "password": null,
+    "database": "eshi_digital",
+    "host": "127.0.0.1",
+    "dialect": "mysql",
+    "operatorsAliases": false
+  },
+  "production": {
+    "username": "ughqllruaeljno",
+    "password": "54ca8e38f9f0b50e70c85f571e816cb55085aa0b50f76a0f25f8c782f73eb9a2",
+    "database": "dffdj0hdo6453c",
+    "port": 5432,
+    "protocol": "postgres",
+    "host": "ec2-54-236-169-55.compute-1.amazonaws.com",
+    "dialect": "postgres"
+  }
+}
