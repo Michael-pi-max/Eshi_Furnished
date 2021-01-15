@@ -1,0 +1,203 @@
+<footer class="site-footer my-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="row">
+            <div class="col-md-4">
+              <h2 class="footer-heading mb-4">About Us</h2>
+              <p>
+                Eshi Digital Marketing is a Digital Marketing Solution provider HQ’d
+                in Ethiopia. We are in charge of driving brand awareness and
+                lead generation through all the digital channels
+              </p>
+            </div>
+            <div class="col-md-4">
+              <h2 class="footer-heading mb-4 text-center">Quick Links</h2>
+              <div class="row">
+                <div class="col-md-6">
+                  <ul class="list-unstyled">
+                    <li>
+                      <a href="#about-section" class="smoothscroll">About us</a>
+                    </li>
+
+                    <li>
+                      <a href="#why-digital-market-section" class="smoothscroll">Why digital marketing</a>
+                    </li>
+
+                    <li>
+                      <a href="#services-section" class="smoothscroll">Services</a>
+                    </li>
+
+                    <li>
+                      <a href="#workstep-section" class="smoothscroll">Work steps</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-md-6 ">
+                  <ul class="list-unstyled">
+                    <li>
+                      <a href="#team-section" class="smoothscroll">Meet team</a>
+                    </li>
+
+                    <li>
+                      <a href="#faq-section" class="smoothscroll">FAQ's</a>
+                    </li>
+
+                    <li>
+                      <a href="#contact-section" class="smoothscroll">Contact</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 footer-social">
+              <h2 class="footer-heading mb-4">Follow Us</h2>
+              <a href="https://www.facebook.com/Eshi-Digital-Marketing-107843124306670" target="_blank" class="pl-0 pr-3"><span class="icon-facebook"></span></a>
+              <a href="https://www.instagram.com/eshidigital/" target="_blank" class="pl-3 pr-3"><span class="icon-instagram"></span></a>
+              <a href="https://twitter.com/DigitalEshi" target="_blank" class="pl-3 pr-3"><span class="icon-twitter"></span></a>
+              <a href="https://t.me/eshidigital" target="_blank" class="pl-3 pr-3"><span class="icon-telegram"></span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row pt-5 mt-5 text-center">
+        <div class="col-md-12">
+          <div class="border-top pt-5">
+            <p>
+              Copyright &copy;
+              <script>
+                document.write(new Date().getFullYear());
+              </script>
+              All rights reserved | Eshi Digital Marketing
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- .site-wrap -->
+
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/jquery-ui.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.countdown.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
+  <script src="js/jquery.sticky.js"></script>
+  <script src="js/isotope.pkgd.min.js"></script>
+
+  <script src="js/main.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script>
+    $(document).ready(function() {
+
+    $('.owl-carousel').owlCarousel({
+      mouseDrag:false,
+      loop:true,
+      margin:2,
+      nav:true,
+      responsive:{
+        0:{
+        items:1
+        },
+        600:{
+        items:1
+        },
+        1000:{
+        items:3
+      }
+    }
+    });
+
+    $('.owl-prev').click(function() {
+    $active = $('.owl-item .item.show');
+    $('.owl-item .item.show').removeClass('show');
+    $('.owl-item .item').removeClass('next');
+    $('.owl-item .item').removeClass('prev');
+    $active.addClass('next');
+    if($active.is('.first')) {
+    $('.owl-item .last').addClass('show');
+    $('.first').addClass('next');
+    $('.owl-item .last').parent().prev().children('.item').addClass('prev');
+    }
+    else {
+    $active.parent().prev().children('.item').addClass('show');
+    if($active.parent().prev().children('.item').is('.first')) {
+    $('.owl-item .last').addClass('prev');
+    }
+    else {
+    $('.owl-item .show').parent().prev().children('.item').addClass('prev');
+    }
+    }
+    });
+
+    $('.owl-next').click(function() {
+    $active = $('.owl-item .item.show');
+    $('.owl-item .item.show').removeClass('show');
+    $('.owl-item .item').removeClass('next');
+    $('.owl-item .item').removeClass('prev');
+    $active.addClass('prev');
+    if($active.is('.last')) {
+    $('.owl-item .first').addClass('show');
+    $('.owl-item .first').parent().next().children('.item').addClass('prev');
+    }
+    else {
+    $active.parent().next().children('.item').addClass('show');
+    if($active.parent().next().children('.item').is('.last')) {
+    $('.owl-item .first').addClass('next');
+    }
+    else {
+    $('.owl-item .show').parent().next().children('.item').addClass('next');
+    }
+    }
+    });
+
+    });
+  </script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script>
+    $(document).ready(function(){
+
+$('.items').slick({
+dots: true,
+infinite: true,
+speed: 800,
+autoplay: true,
+autoplaySpeed: 2000,
+slidesToShow: 4,
+slidesToScroll: 4,
+responsive: [
+{
+breakpoint: 1024,
+settings: {
+slidesToShow: 3,
+slidesToScroll: 3,
+infinite: true,
+dots: true
+}
+},
+{
+breakpoint: 600,
+settings: {
+slidesToShow: 2,
+slidesToScroll: 2
+}
+},
+{
+breakpoint: 480,
+settings: {
+slidesToShow: 1,
+slidesToScroll: 1
+}
+}
+
+]
+});
+});
+  </script>
+</body>
+
+</html>
