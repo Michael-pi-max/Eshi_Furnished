@@ -1,0 +1,30 @@
+{
+  "name": "eshi-digital",
+  "version": "1.0.0",
+  "description": "website for digital marketing startup",
+  "main": "app.js",
+  "author": "Eshi Digital PLC",
+  "license": "MIT",
+  "scripts": {
+    "start": "node ./src/app.js",
+    "dev": "nodemon ./src/app.js"
+  },
+  "dependencies": {
+    "compression": "^1.7.4",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "ejs": "^3.1.3",
+    "express": "^4.17.1",
+    "mysql2": "^2.1.0",
+    "pg": "^8.2.1",
+    "pg-hstore": "^2.3.3",
+    "sequelize": "^5.21.13"
+  },
+  "devDependencies": {
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.4"
+  },
+  "engines": {
+    "node": "12.x"
+  }
+}
